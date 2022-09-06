@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb+srv://admin:mongodb123@cluster0.hxtxool.mongodb.net/blogger", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.hxtxool.mongodb.net/blogger", { useNewUrlParser: true });
 
 const blogSchema = mongoose.Schema({
     title: String,
